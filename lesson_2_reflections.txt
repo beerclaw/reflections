@@ -5,3 +5,22 @@ How is the staging area different from the working directory and the repository?
 	The staging area only includes the files for which we want to track changes in a single commit. It allows user to choose which files to include in a commit, rather than every files in the directory.
 	Working directory will shows all files in the directory. It doesn't interact with the act to creating a new commit.
 
+How can you use the staging area to make sure you have one commit per logical change?
+	I can make changes to multiple files, but I may not want to includes all these changes in the one single commit. I can put the files I want to change on the staging area, this will keep the other files the same as those in the most recent commits. Then I can create a new commit with the files on the staging area. 
+	Next I can create commit that includes the other files with changes in the working directory.
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Branches are helpful when i want to make changes to the files, but retain a master versions. I can make changes to other branches while working on the master at the same time. Branches are useful when I want to makes changes that are not ready to be added to the master version. I can work on the experimental branches and the master branch at the same time, and merge them together when the experimental features are ready to be added the master version. 
+How do the diagrams help you visualize the branch structure?
+
+How do the diagrams help you visualize the branch structure?
+	From the perspective of the master branch and another branch that come from the master. The diagrams allow me to see where the non-master branch started, what new commits were added to it. The diagrams also shows me that commits that were added to the master branch. I can see tha changes in one brach that is not in the other.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	The contents of the two branches are combine into 1 version. Using the 1st common ancestor of the 2 branches as a guide, any addition in each is added to the merge version, any deletion in each is excluded out of the merger version. The merger commit will include a log of all the commits from both of its parent.
+	The new merger commit is the tip of the current checkout branch. It will remember both branches as parents.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Auto is easier. I can' think of a con as auto merge can only be complete successfully if there's no conflict
+	Manual merge take time, but we can control what code is included in the merge version
+	
+	
